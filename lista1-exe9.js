@@ -12,5 +12,5 @@ function exe9(num) {
             divisores = divisores + i 
            }
     }
-    console.log(`A soma dos divisores é ${divisores}`)
+    console.log(`A soma dos divisores de ${num} é ${divisores}`)
 }
