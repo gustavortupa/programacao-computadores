@@ -35,10 +35,14 @@ function cadastra(vet){
 }
 function MediaIdade(vet){ 
     let soma = 0 
+    let qntdC = 0
     for(habitates of vet){
-        soma = soma + habitantes.idade
+        if((habitantes.altura > 1.60)&&(habitantes.olhos == `C`)){
+           soma = soma + habitantes.idade
+           qntdC++
+        }
     }
-    console.log(`A média das idades informadas é ${soma/vet.length}`)
+    console.log(`A média das idades informadas é ${soma/qntdC}`)
 }
 
 function MaiorIdade(vet){
