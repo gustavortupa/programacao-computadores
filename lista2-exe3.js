@@ -5,19 +5,19 @@ function chefe(){
          \n [3] Maior Idade \n [4] Quantidade de Mulheres entre 20 e 45 anos ou que tenham olhos verdes e altura inferior a 1.70m 
          \n [5] Percentual dos Homens \n [6] Sair`))
          switch(escolha){
-          case 1:cadastra(vetor)
-                 break
-          case 2:MediaIdade(vetor)
-                 break
-          case 3:MaiorIdade(vetor)
-                 break
-          case 4:QntdeMulheres(vetor)
-                 break
-          case 5:PercentualHomens(vetor)
-                 break
-          case 6:console.log(`Obrigado por utilizar nosso software!`)
-                 break
-          default:console.log(`Opção Inválida`)
+          case 1: cadastra(vetor)
+                  break
+          case 2: MediaIdade(vetor)
+                  break
+          case 3: MaiorIdade(vetor)
+                  break
+          case 4: QntdeMulheres(vetor)
+                  break
+          case 5: PercentualHomens(vetor)
+                  break
+          case 6: console.log(`Obrigado por utilizar nosso software!`)
+                  break
+          default: console.log(`Opção Inválida`)
          }  
 
     }
