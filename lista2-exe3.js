@@ -57,17 +57,10 @@ function MaiorIdade(vet){
 function QntdeMulheres(vet){
     let Quantidade = 0
     for(habitantes of vet){
-        if(habitantes.sexo == `Feminino`){
-              
-              if((habitantes.idade >= 20)&&(habitantes.idade<= 45)){
+        if(((habitantes.sexo == `Feminino`)&&(habitantes.idade >= 20)&&(habitantes.idade <= 45))
+        ||((habitantes.olhos == `V`)&&(habitantes.altura < 1.70))){     
                 Quantidade++
-               }
-              if((habitantes.olhos == `V`)&&(habitantes.altura < 1.70)){
-                Quantidade++
-              }
-
         }
-
     }
     console.log(`A quantidade de mulheres é ${Quantidade}`)
 }
