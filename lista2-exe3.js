@@ -15,7 +15,7 @@ function chefe(){
                   break
           case 5: PercentualHomens(vetor)
                   break
-          case 6: console.log(`Obrigado por utilizar nosso software!`)
+          case 6: console.log(`Obrigado por utilizar nosso programa!`)
                   break
           default: console.log(`Opção Inválida`)
          }  
