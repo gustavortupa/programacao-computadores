@@ -1,7 +1,7 @@
 function chefe(){
     let vetor = [] 
     do {
-         var escolha = Number(prompt(`Escolha uma das opções abaixo: \n [1] Cadastrar \n [2] Média de idade das pessoas c/ olhos castanhos e altura superior a 1.60m 
+         let escolha = Number(prompt(`Escolha uma das opções abaixo: \n [1] Cadastrar \n [2] Média de idade das pessoas c/ olhos castanhos e altura superior a 1.60m 
          \n [3] Maior Idade \n [4] Quantidade de Mulheres entre 20 e 45 anos ou que tenham olhos verdes e altura inferior a 1.70m 
          \n [5] Percentual dos Homens \n [6] Sair`))
          switch(escolha){
