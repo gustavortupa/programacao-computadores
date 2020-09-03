@@ -27,7 +27,7 @@ function cadastraVendedor(vet){ // vet representa o vetor dos vendedores
     for(let i = 0; i < vet.length; i++){
            if (vendedor.codigo == vet[i].codigo){
                 console.log(`Cadastro cancelado pois esse código de vendedor já existe!`)
-                return 0
+                return
              }
      }
     //insere no vet, mas na verdade insere nos vendedores
@@ -48,7 +48,7 @@ function cadastraVendas(vdas,vdes){ //vdas representa o vetor vendas | vdes repr
                 for(let j = 0; j < vdas.length; j++){
                     if((venda.mes = vdas[i].mes)&&(venda.vendedor = vdas[i].vendedor)){
                         console.log(`Não podemos cadastrar a venda`)
-                        return 0 // sai da função
+                        return // sai da função
                     }
                 }
             }
@@ -56,7 +56,7 @@ function cadastraVendas(vdas,vdes){ //vdas representa o vetor vendas | vdes repr
         // insere venda em vdas, que na verdade é vendas 
         vdas.push(venda) 
         console.log(`Venda Registrada`)  
-        return 0 
+        return 
     } 
    console.log(`Vendedor não existe`)
 }
