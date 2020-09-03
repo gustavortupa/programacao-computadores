@@ -52,7 +52,7 @@ function cadastraVendas(vdas,vdes){ //vdas representa o vetor vendas | vdes repr
                 }
             }
         //ja percorreu e não achou, então vamos inserir
-        // insere venda em vdas, que na verdade é o vetor vendas 
+        // insere venda em vdas, que na verdade é vendas 
         vdas.push(venda) 
         console.log(`Venda Registrada`)  
         return 0 
