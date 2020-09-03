@@ -1,8 +1,9 @@
 function chefe(){
     let vendedores = []
     let vendas = []
+    let escolha 
     do {
-         let escolha = Number(prompt(`Escolha uma das opções abaixo: \n [1] Cadastrar vendedor \n [2] Cadastrar Venda 
+          escolha = Number(prompt(`Escolha uma das opções abaixo: \n [1] Cadastrar vendedor \n [2] Cadastrar Venda 
          \n [3] Finalizar o programa`))
          switch(escolha){
           case 1: cadastraVendedor(vendedores)
