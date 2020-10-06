@@ -1,6 +1,6 @@
 //EcmaScript é uma especificação 
 //Exemplos de JS em especificação ES5 
-// vamos aprender
+//vamos aprender
 //Array.forEach()
 //Array.map()
 //Array.filter()
@@ -127,3 +127,4 @@ subtracao(6,1)
 
 //Próxima aula = Filter, Reduce , Some 
 
+// -------------------------------------------------------------------------------------------------
