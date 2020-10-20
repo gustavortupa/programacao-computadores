@@ -1,3 +1,6 @@
+//Aula Monitoria 20-10-15 
+//Gustavo Ravanini Tupá Medeiros - 22974 - 2 Semestre de Eng. de Software
+
 function chefe() {
     let bicicletas = [];
     let opcao 
