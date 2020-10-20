@@ -18,7 +18,7 @@ function exe1(elemento, posicao){ //podemos passar como paramêtro o elemento e 
     
 }
 
-function exe2(elemento){ //pasando somento o elemento como parâmetro
+function exe2(elemento){ //passando somento o elemento como parâmetro
     if(elemento % 2 == 1){
         console.log(elemento)
     }
