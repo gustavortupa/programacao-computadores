@@ -38,7 +38,7 @@ function adicionar(bicicletas) {
      valor:Number(prompt('Informe o valor da bicicleta:')),
      ano:prompt('Ano:'),
     }) 
-    console.log(`Bike ${codigo} registrada com sucesso!`)  
+    console.log(`Bike ${bicicletas[bicicletas.length - 1].codigo} registrada com sucesso!`)  
 
 }
 
