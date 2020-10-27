@@ -40,12 +40,12 @@ console.log(vet.filter((elemento => elemento > 5)))
 var cadastra = (vet) => {
      vet.push(
          {
-             codigo: Number(prompt(`Informe codigo`)),
-             aro: Number(prompt(`Informe aro`)),
-             modelo: prompt(`Informe modelo`),
-             marca: prompt(`Informe marca`),
-             valor: Number(prompt(`Informe valor`)),
-             ano: Number(prompt(`Informe ano de fabricação`))
+             codigo: Number(prompt(`Informe o código da bicicleta:`)),
+             aro: Number(prompt(`Informe o aro da bicicleta:`)),
+             modelo: prompt(`Informe o modelo da bicicleta:`),
+             marca: prompt(`Informe a marca da bicicleta:`),
+             valor: Number(prompt(`Informe o valor da bicicleta:`)),
+             ano: Number(prompt(`Informe o ano de fabricação:`))
          }
      )
      console.log(`Bike ${vet[vet.length-1].codigo} inserida com sucesso `)
@@ -62,20 +62,20 @@ var busca = (vet) => {
      }
 
 var soma = (vet) => {
-    let resultado = vet.reduce((total, el) => {total + el.valor}, 0) 
+    let resultado = vet.reduce((total, el) => total + el.valor, 0) 
      console.log(`A soma dos valores é ${resultado}`)
     }
 
-var marca
+
 var buscaMarca = (vet) => {
-        marca = prompt(`Informe a marca:`)
-        console.log(vet.filter((el) => {marca = el.marca}))
+       let marca = prompt(`Informe a marca:`)
+        console.log(vet.filter((el) => marca == el.marca))
     }
 
 var soma3 = (vet) => {
      console.log(vet.map((el)=> {
          el.aro = el.aro + 3 
-         el
+         return el
          }))
     }
 
