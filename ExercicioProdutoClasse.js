@@ -15,7 +15,12 @@ class produto {
     }
 
     vender = (x) => {
-        this.quantidade = this.quantidade - x
+        if((this.quantidade - x) > 0) {
+            this.quantidade - x
+        } 
+        else{
+          console.log('Estoque Insuficiente') 
+        }
     }
 
     aumentar = (x) => {
@@ -23,7 +28,13 @@ class produto {
     }
 
     diminuir = (x) => {
-        this.preco = this.preco - x
+        if((this.preco - x) >= 0) {
+            this.preco - x
+        } 
+        else{ 
+            console.log('Preço não pode ser negativo!')
+        } 
+    
     }
 
     mostra = () => {
@@ -33,11 +44,11 @@ class produto {
 }
 
 
-let produto1 = new produto(102030, "Bota de couro", 20, 100)
+let produto1 = new produto(102030, "Bota de couro", 20, 10)
 produto1.comprar(5)
 produto1.vender(10)
 produto1.aumentar(50)
-produto1.diminuir(25)
+produto1.diminuir(70)
 produto1.mostra()
 
 let a = Number(prompt('Informe o id do produto:'))
